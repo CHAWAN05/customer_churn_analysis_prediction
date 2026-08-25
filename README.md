@@ -59,11 +59,11 @@ The Random Forest classification model was evaluated on a held-out test set of *
 
 | Metric | Result |
 |---|---:|
-| Accuracy | 78.1% |
-| ROC-AUC | 0.822 |
-| Churn Precision | 0.62 |
-| Churn Recall | 0.47 |
-| Churn F1-Score | 0.53 |
+| Accuracy | 78.50% |
+| Precision | 0.62 |
+| Recall | 0.50 |
+| F1-Score | 0.55 |
+| ROC-AUC | 0.825 |
 
 The overall customer churn rate in the dataset was **26.54%**.
 
@@ -117,7 +117,7 @@ The Random Forest model identified the following variables among the most influe
 
 The analysis demonstrates that customer tenure, billing behavior, contract type, and selected service features play an important role in predicting customer churn.
 
-The Random Forest model achieved **78.1% accuracy** and a **0.822 ROC-AUC**, providing a useful baseline for identifying customers who may be at risk of leaving.
+The Random Forest model achieved 78.50% accuracy and a 0.825 ROC-AUC on the evaluated test set.
 
 These insights can support targeted customer-retention strategies, particularly for customers with shorter tenure, higher monthly charges, and month-to-month contracts.
 

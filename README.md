@@ -137,7 +137,7 @@ These are analytical hypotheses rather than causal conclusions and should be val
 
 **Telco Customer Churn** dataset.
 
-The notebook loads the public dataset from IBM's archived sample repository at runtime, so the raw dataset is intentionally not included in this repository.
+The project uses the IBM Telco Customer Churn sample dataset. A copy of the dataset is included in the repository for reproducibility.
 
 - Dataset size: approximately 7,000 customers
 - Target: `Churn`

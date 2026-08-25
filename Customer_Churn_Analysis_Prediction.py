@@ -52,7 +52,7 @@ from google.colab import files
 uploaded = files.upload()
 file_name = next(iter(uploaded))
 
-dataset = pd.read_csv(file_name)
+dataset = pd.read_csv("data/Telco-Customer-Churn.csv")
 
 dataset.head()
 

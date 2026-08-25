@@ -25,6 +25,21 @@ Customer churn can directly affect recurring revenue and customer lifetime value
 - Scikit-learn
 - Jupyter Notebook
 
+## Project Structure
+
+```text
+customer_churn_analysis_prediction/
+│
+├── data/
+├── Customer_Churn_Analysis_Prediction.ipynb
+├── customer_churn_analysis_prediction.py
+├── churn_distribution.png
+├── confusion_matrix.png
+├── feature_importance.png
+├── requirements.txt
+└── README.md
+```
+
 ## Project Workflow
 
 1. Load and inspect the Telco Customer Churn dataset

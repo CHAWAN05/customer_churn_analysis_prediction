@@ -39,6 +39,16 @@ customer_churn_analysis_prediction/
 ├── requirements.txt
 └── README.md
 ```
+## How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/CHAWAN05/customer_churn_analysis_prediction.git
+cd customer_churn_analysis_prediction
+pip install -r requirements.txt
+python customer_churn_analysis_prediction.py
+```
 
 ## Project Workflow
 
@@ -53,7 +63,7 @@ customer_churn_analysis_prediction/
 
 ## Model Results & Key Findings
 
-The Random Forest classification model was evaluated on a held-out test set of 1,409 customers.
+The Random Forest classification model was evaluated on a held-out test set of **1,409 customers**.
 
 ### Model Performance
 
@@ -67,6 +77,17 @@ The Random Forest classification model was evaluated on a held-out test set of 1
 
 The overall customer churn rate in the dataset was **26.54%**.
 
+### Confusion Matrix
+
+The model produced the following results on the test set:
+
+- **927** customers correctly classified as No Churn
+- **108** customers incorrectly classified as Churn
+- **200** churn customers incorrectly classified as No Churn
+- **174** customers correctly identified as Churn
+
+The model correctly identified **174 of 374 actual churn customers** in the test set.
+
 ## Visual Analysis
 
 ### Customer Churn Distribution
@@ -79,7 +100,7 @@ The dataset shows an overall customer churn rate of **26.54%**, indicating that 
 
 ### Model Evaluation — Confusion Matrix
 
-The model correctly identified **174 of 374 actual churn customers** in the test set.
+The confusion matrix shows the model's classification performance on the held-out test set.
 
 ![Customer Churn Confusion Matrix](confusion_matrix.png)
 
@@ -89,16 +110,26 @@ The model correctly identified **174 of 374 actual churn customers** in the test
 
 The Random Forest model identified the following variables among the most influential predictors of customer churn:
 
-- Total Charges
-- Tenure
-- Monthly Charges
-- Month-to-month Contract
-- Online Security
-- Two-year Contract
-- Tech Support
-- Electronic Check Payment Method
+1. Total Charges
+2. Tenure
+3. Monthly Charges
+4. Month-to-month Contract
+5. Online Security
+6. Two-year Contract
+7. Tech Support
+8. Electronic Check Payment Method
 
 ![Top Features Influencing Churn Prediction](feature_importance.png)
+
+---
+
+## Conclusion
+
+The analysis demonstrates that customer tenure, billing behavior, contract type, and selected service features play an important role in predicting customer churn.
+
+The Random Forest model achieved **78.1% accuracy** and a **0.822 ROC-AUC**, providing a useful baseline for identifying customers who may be at risk of leaving.
+
+These insights can support targeted customer-retention strategies, particularly for customers with shorter tenure, higher monthly charges, and month-to-month contracts.
 
 ### Model Evaluation
 

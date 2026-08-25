@@ -52,6 +52,39 @@ The Random Forest classification model was evaluated on a held-out test set of 1
 
 The overall customer churn rate in the dataset was **26.54%**.
 
+## Visual Analysis
+
+### Customer Churn Distribution
+
+The dataset shows an overall customer churn rate of **26.54%**, indicating that approximately one in four customers has churned.
+
+### Model Evaluation
+
+The Random Forest model achieved:
+
+- **Accuracy:** 78.1%
+- **ROC-AUC:** 0.822
+- **Churn Precision:** 0.62
+- **Churn Recall:** 0.47
+- **Churn F1-Score:** 0.53
+
+### Confusion Matrix
+
+The model correctly identified **174 of 374 actual churn customers** in the test set.
+
+### Feature Importance
+
+The most influential predictive features included:
+
+1. Total Charges
+2. Tenure
+3. Monthly Charges
+4. Month-to-month Contract
+5. Online Security
+6. Two-year Contract
+7. Tech Support
+8. Electronic Check Payment Method
+
 ### Confusion Matrix
 
 The model produced the following results on the test set:

@@ -36,6 +36,60 @@ Customer churn can directly affect recurring revenue and customer lifetime value
 7. Train a Random Forest Classifier
 8. Evaluate model performance using accuracy and a confusion matrix
 
+## Model Results & Key Findings
+
+The Random Forest classification model was evaluated on a held-out test set of 1,409 customers.
+
+### Model Performance
+
+| Metric | Result |
+|---|---:|
+| Accuracy | 78.1% |
+| ROC-AUC | 0.822 |
+| Churn Precision | 0.62 |
+| Churn Recall | 0.47 |
+| Churn F1-Score | 0.53 |
+
+The overall customer churn rate in the dataset was **26.54%**.
+
+### Confusion Matrix
+
+The model produced the following results on the test set:
+
+- **927** customers correctly classified as No Churn
+- **108** customers incorrectly classified as Churn
+- **200** churn customers incorrectly classified as No Churn
+- **174** customers correctly identified as Churn
+
+### Key Features Influencing Predictions
+
+The top model features included:
+
+1. Total Charges
+2. Tenure
+3. Monthly Charges
+4. Month-to-month Contract
+5. Online Security
+6. Two-year Contract
+7. Tech Support
+8. Electronic Check Payment Method
+9. Fiber Optic Internet Service
+10. Online Backup
+
+These feature-importance results indicate which variables contributed most to the model's predictions. They should not be interpreted as causal relationships.
+
+## Business Insights
+
+The analysis suggests several areas that could be investigated for customer-retention strategies:
+
+- Prioritize customers on month-to-month contracts for retention initiatives.
+- Monitor customers with relatively high monthly charges.
+- Pay attention to early-tenure customers during onboarding and service-quality initiatives.
+- Investigate service combinations associated with higher predicted churn risk.
+- Use predicted churn probabilities to prioritize limited retention resources.
+
+These are analytical hypotheses rather than causal conclusions and should be validated through further business testing.
+
 ## Model Performance
 
 - **Algorithm:** Random Forest Classifier

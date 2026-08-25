@@ -15,6 +15,39 @@ Customer churn can directly affect recurring revenue and customer lifetime value
 - Evaluate the model using accuracy, precision, recall, F1-score, ROC-AUC, and a confusion matrix
 - Identify important features for churn prediction
 - Translate analytical findings into practical customer-retention considerations
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Jupyter Notebook
+
+## Project Workflow
+
+1. Load and inspect the Telco Customer Churn dataset
+2. Analyze customer churn distribution
+3. Handle missing and incorrect values
+4. Encode categorical variables
+5. Split data into training and testing sets
+6. Apply feature scaling using StandardScaler
+7. Train a Random Forest Classifier
+8. Evaluate model performance using accuracy and a confusion matrix
+
+## Model Performance
+
+- **Algorithm:** Random Forest Classifier
+- **Reported Accuracy:** 78%
+- **Evaluation:** Accuracy Score and Confusion Matrix
+
+## Business Insight
+
+Customer churn can directly impact recurring revenue and customer lifetime value. 
+Analyzing customer characteristics, service usage, contracts, tenure, and billing 
+behavior can help businesses identify customers who may be at higher risk of leaving 
+and support proactive retention strategies.
 
 ## Dataset
 

@@ -39,16 +39,6 @@ customer_churn_analysis_prediction/
 ├── requirements.txt
 └── README.md
 ```
-## How to Run
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/CHAWAN05/customer_churn_analysis_prediction.git
-cd customer_churn_analysis_prediction
-pip install -r requirements.txt
-python customer_churn_analysis_prediction.py
-```
 
 ## Project Workflow
 
@@ -131,59 +121,6 @@ The Random Forest model achieved **78.1% accuracy** and a **0.822 ROC-AUC**, pro
 
 These insights can support targeted customer-retention strategies, particularly for customers with shorter tenure, higher monthly charges, and month-to-month contracts.
 
-### Model Evaluation
-
-The Random Forest model achieved:
-
-- **Accuracy:** 78.1%
-- **ROC-AUC:** 0.822
-- **Churn Precision:** 0.62
-- **Churn Recall:** 0.47
-- **Churn F1-Score:** 0.53
-
-### Confusion Matrix
-
-The model correctly identified **174 of 374 actual churn customers** in the test set.
-
-### Feature Importance
-
-The most influential predictive features included:
-
-1. Total Charges
-2. Tenure
-3. Monthly Charges
-4. Month-to-month Contract
-5. Online Security
-6. Two-year Contract
-7. Tech Support
-8. Electronic Check Payment Method
-
-### Confusion Matrix
-
-The model produced the following results on the test set:
-
-- **927** customers correctly classified as No Churn
-- **108** customers incorrectly classified as Churn
-- **200** churn customers incorrectly classified as No Churn
-- **174** customers correctly identified as Churn
-
-### Key Features Influencing Predictions
-
-The top model features included:
-
-1. Total Charges
-2. Tenure
-3. Monthly Charges
-4. Month-to-month Contract
-5. Online Security
-6. Two-year Contract
-7. Tech Support
-8. Electronic Check Payment Method
-9. Fiber Optic Internet Service
-10. Online Backup
-
-These feature-importance results indicate which variables contributed most to the model's predictions. They should not be interpreted as causal relationships.
-
 ## Business Insights
 
 The analysis suggests several areas that could be investigated for customer-retention strategies:
@@ -195,19 +132,6 @@ The analysis suggests several areas that could be investigated for customer-rete
 - Use predicted churn probabilities to prioritize limited retention resources.
 
 These are analytical hypotheses rather than causal conclusions and should be validated through further business testing.
-
-## Model Performance
-
-- **Algorithm:** Random Forest Classifier
-- **Reported Accuracy:** 78%
-- **Evaluation:** Accuracy Score and Confusion Matrix
-
-## Business Insight
-
-Customer churn can directly impact recurring revenue and customer lifetime value. 
-Analyzing customer characteristics, service usage, contracts, tenure, and billing 
-behavior can help businesses identify customers who may be at higher risk of leaving 
-and support proactive retention strategies.
 
 ## Dataset
 
@@ -221,30 +145,6 @@ The notebook loads the public dataset from IBM's archived sample repository at r
 
 Dataset reference:
 https://github.com/IBM/telco-customer-churn-on-icp4d
-
-## Tech Stack
-
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- Jupyter Notebook
-
-## Machine Learning Workflow
-
-1. Load the Telco customer dataset
-2. Inspect data types, missing values, and duplicates
-3. Convert `TotalCharges` to numeric
-4. Explore churn distribution and major customer segments
-5. Separate predictors and target
-6. Apply preprocessing using a Scikit-learn pipeline
-7. Train/test split with stratification
-8. Train a Random Forest classifier
-9. Evaluate classification performance
-10. Analyze feature importance
-11. Translate findings into business-oriented retention hypotheses
 
 ## How to Run
 
@@ -265,13 +165,14 @@ The notebook downloads the dataset from the public IBM GitHub source when execut
 
 ```text
 customer_churn_analysis_prediction/
-│
-├── customer_churn_analysis_prediction.ipynb
-├── README.md
+├── data/
+├── Customer_Churn_Analysis_Prediction.ipynb
+├── customer_churn_analysis_prediction.py
+├── churn_distribution.png
+├── confusion_matrix.png
+├── feature_importance.png
 ├── requirements.txt
-├── .gitignore
-└── data/
-    └── README.md
+└── README.md
 ```
 
 ## Portfolio Value
@@ -289,7 +190,9 @@ This project demonstrates practical skills in:
 
 ## Attribution
 
-The project topic and dataset workflow were informed by the **Customer Churn Analysis Prediction** tutorial from GeeksforGeeks and the IBM Telco Customer Churn sample dataset. The notebook in this repository is an independently structured implementation with its own preprocessing pipeline, evaluation workflow, and business interpretation.
+This project was independently implemented using the IBM Telco Customer Churn sample dataset.
+
+The project topic and general workflow were informed by publicly available customer churn analysis resources, including a GeeksforGeeks tutorial. The implementation in this repository includes its own preprocessing pipeline, model evaluation, visualizations, feature analysis, and business interpretation.
 
 ## Future Enhancements
 

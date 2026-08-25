@@ -58,6 +58,33 @@ The overall customer churn rate in the dataset was **26.54%**.
 
 The dataset shows an overall customer churn rate of **26.54%**, indicating that approximately one in four customers has churned.
 
+![Customer Churn Distribution](churn_distribution.png)
+
+---
+
+### Model Evaluation — Confusion Matrix
+
+The model correctly identified **174 of 374 actual churn customers** in the test set.
+
+![Customer Churn Confusion Matrix](confusion_matrix.png)
+
+---
+
+### Feature Importance
+
+The Random Forest model identified the following variables among the most influential predictors of customer churn:
+
+- Total Charges
+- Tenure
+- Monthly Charges
+- Month-to-month Contract
+- Online Security
+- Two-year Contract
+- Tech Support
+- Electronic Check Payment Method
+
+![Top Features Influencing Churn Prediction](feature_importance.png)
+
 ### Model Evaluation
 
 The Random Forest model achieved:

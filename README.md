@@ -135,15 +135,15 @@ These are analytical hypotheses rather than causal conclusions and should be val
 
 ## Dataset
 
-**Telco Customer Churn** dataset.
+The project uses the IBM Telco Customer Churn sample dataset. A copy of the dataset is included in this repository for reproducibility.
 
-The project uses the IBM Telco Customer Churn sample dataset. A copy of the dataset is included in the repository for reproducibility.
-
-- Dataset size: approximately 7,000 customers
-- Target: `Churn`
+- Dataset size: 7,043 customers
+- Target variable: `Churn`
 - Key variables include tenure, contract type, internet service, payment method, monthly charges, and total charges.
 
-Dataset reference:
+### Dataset Reference
+
+Original dataset source:  
 https://github.com/IBM/telco-customer-churn-on-icp4d
 
 ## How to Run
